@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+
+
+
+    
+
+h1#principal{
+    text-shadow: 5px 5px 8px rgb(122, 26, 160);
+    color: rgb(40, 94, 9);
+    border:  solid orangered;
+    background-color: white;
+    width: fit-content;
+    padding: 10px;
+    margin: auto;
+}
+
+.principal{
+    color: rgb(77, 140, 5);
+}
+.aprendendo{
+    color: rgb(15, 53, 111);
+    background-color: chocolate;
+    border: solid black;
+    width: fit-content;
+    margin: auto;
+    border-radius: 10px;
+    padding: 5px;
+}
+.basico{
+    color: rgb(68, 126, 53);
+  
+}
+.intermediario{
+    color: rgb(47, 111, 94);
+}
+.avancado{
+    color:rgb(255, 0, 0)
+}
+img{
+    border:20px solid rgb(53, 51, 51);
+    margin:auto;
+    display:block;
+}
+h2#aprendendo{
+    color: rgb(15, 53, 111);
+    background-color: chocolate;
+    border: solid black;
+    width: fit-content;
+    margin: auto;
+    border-radius: 10px;
+    padding: 5px;
+}

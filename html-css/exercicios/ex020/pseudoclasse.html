@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        .filho{
+            background-color: rgb(102, 101, 101);
+            display: inline-block;    
+            width: 150px;
+            height: 150px;
+            margin: auto;
+            border:  5px solid black;
+            font-family: Arial, Helvetica, sans-serif;
+            font: bolder;
+            font-size: 40px;
+            text-align: center;
+            padding: 10px;
+            
+        }
+        .filho:hover{
+            background-image: radial-gradient(circle, #00fffb 20% , #0026ff);
+        }
+        .pai{
+            text-align: center;
+            width: 100%;
+         }
+
+    </style>
+</head>
+<body>
+    <div class="pai">
+        <div class="filho">01</div>
+        <div class="filho">02</div>
+        <div class="filho">03</div>
+    </div>
+</body>
+</html>

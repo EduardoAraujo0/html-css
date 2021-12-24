@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda Personalizada</title>
+    <style>
+        h1{
+            border: 12px solid transparent;
+            padding: 9px;
+            border-image: url(borda.png) 27 repeat;
+            
+        
+            border-image-source: url(borda.png);        
+            border-image-slice: 27;
+            border-image-repeat: repeat ;
+            margin-bottom: 5px;
+            width: fit-content;
+            margin: auto;
+            text-align: center;
+            
+        }
+        main{
+            width: fit-content;
+            background-color: tomato;
+            padding: 10px;
+            
+            
+        }
+        a{
+            
+            transition: 0.5s;
+            width: 20px;
+            margin: 20px;
+            padding:6px 8px;
+            border: turquoise 0px 5px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        
+        a:hover{
+            background-color: rgba(19, 230, 209, 0.556);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de Borda</h1>
+        <a href="#">Link</a>
+    </main>
+    
+</body>
+</html>
