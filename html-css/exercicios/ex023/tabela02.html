@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            position: relative;
+        }
+        thead, tfoot{
+           color: white;
+           background-color: black;
+        }
+        tbody tr:nth-child(2n){
+            background-color: lightgray;
+        }
+        thead > tr > th{
+            position:sticky;
+            top: -1px;
+            background-color: black;
+        }
+        td, th{
+            width: 140px;
+            padding: 8px;
+            border: 1px solid black;
+        }
+        .posicao{
+            max-width: 60px;
+            text-align: center;
+        }
+        .num{
+            text-align: right;
+        }
+        .foot{
+            width: 240px;
+        }
+        .bordas{
+            border-left: 2px solid white ;
+            border-right: 2px solid white ;
+        }
+        .borda-na-direita{
+            border-right: 2px solid white ;
+        }
+        caption{
+            color: black;
+            border: 1px solid black;
+            font-size: 1.3em;
+            padding: 5px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>O uso de tabelas grandes</h1>
+    <table>
+        <caption>
+            População das Unidades federativas
+        </caption>
+        <thead>
+            <tr>
+                <th class="posicao" scope="col">Posição</th>
+               <th class="bordas" scope="col">Estado</th>
+               <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="posicao">1</td>
+                <td>São Paulo</td>
+                <td class="num">46 649 132</td>
+            </tr>
+            <tr>
+                <td class="posicao">2</td>
+                <td>Minas Gerais</td>
+                <td class="num">21 411 923</td>
+            </tr>
+            <tr><td class="posicao">3</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 463 349</td>
+            </tr>
+            <tr>
+                <td class="posicao">4</td>
+                <td>Bahia</td>
+                <td class="num">14 985 284</td>
+            </tr>
+            <tr>
+                <td class="posicao">5</td>
+                <td>Paraná</td>
+                <td class="num">11 597 484</td>
+            </tr>
+            <tr>
+                <td class="posicao">6</td>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 466 630</td>
+            </tr>
+            <tr><td class="posicao">7</td>
+                <td>Pernambuco</td>
+                <td class="num">9 674 793</td>
+            </tr>
+            <tr>
+                <td class="posicao">8</td>
+                <td>Ceará</td>
+                <td class="num">9 240 580</td>
+            </tr>
+            <tr>
+                <td class="posicao">9</td>
+                <td>Pará</td>
+                <td class="num">8 777 124</td>
+            </tr>
+            <tr>
+                <td class="posicao">10</td>
+                <td>Santa Catarina</td>
+                <td class="num">7 338 473</td>
+            </tr>
+            
+        </tbody>
+        <tfoot>
+            <tr>
+                <th class="borda-na-direita" scope="row" colspan="2">População total do Brasil</th>
+                <td class="num">213 953 996</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
